@@ -13,7 +13,7 @@ public class UserMain {
     }
     void requestOrder(String[]addons){
         for (int i = 0; i < addons.length; i++) {
-            if(addons[i].equals(admin.add.get(i).Name)){
+            if(addons[i].contentEquals(admin.add.get(i).Name)){
                 totalPrice+=admin.add.get(i).price;
             }
             
